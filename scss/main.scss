@@ -1,0 +1,68 @@
+
+// bootstrap icons
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("./fonts/bootstrap-icons.woff2?856008caa5eb66df68595e734e59580d") format("woff2"),
+url("./fonts/bootstrap-icons.woff?856008caa5eb66df68595e734e59580d") format("woff");
+}
+
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-facebook::before { content: "\f344"; }
+.bi-github::before { content: "\f3ed"; }
+.bi-twitter::before { content: "\f5ef"; }
+.bi-file-earmark-person-fill::before { content: "\f378"; }
+.bi-headphones::before { content: "\f413"; }
+
+
+
+
+
+$primary: #BE3144;
+$secondary: #45567D;
+// font sizes
+$h1-font-size: 6rem;
+$h2-font-size:3rem;
+$h3-font-size:2.2rem;
+
+.header-links:hover{
+   background:#45567D;
+}
+
+#projects{
+  .project-title{
+    border-bottom:3px solid white;
+  }
+  .project a iframe{
+    width:100%;
+    height:20rem;
+    overflow-y:hidden;
+  }
+}
+
+#contact{
+  a{
+    text-decoration:none;
+    transition:transform .5s;
+  }
+  a:hover{
+    transform:translateY(8px);
+  }
+}
+
+#footer{
+  border-top:4px solid $primary;
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
